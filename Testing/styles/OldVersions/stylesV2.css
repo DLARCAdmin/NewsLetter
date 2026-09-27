@@ -606,29 +606,3 @@ h3, h4, h5, h6 { font-size: 19px; line-height: 1.3; margin-bottom: 10px; }
     .volume-issue { background: white; color: black; border-bottom: 1px solid #777; }
     .call-to-action { background: white; color: black; border: 1px solid; }
 }
-
-/* ================================================================
-   Version 3 - Local Repeater Table
-   Keep repeater frequencies and offsets together on one line.
-   Apply with: <table class="table-style repeater-table">
-   ================================================================ */
-.repeater-table th:nth-child(2),
-.repeater-table td:nth-child(2) {
-    white-space: nowrap;
-    overflow-wrap: normal;
-    word-break: normal;
-    min-width: 105px;
-}
-
-/* Preserve the no-wrap frequency column on narrow screens even though
-   the general mobile table rules allow wrapping elsewhere. */
-@media (max-width: 768px) {
-    .repeater-table th:nth-child(2),
-    .repeater-table td:nth-child(2) {
-        white-space: nowrap;
-        overflow-wrap: normal;
-        word-break: normal;
-        min-width: 105px;
-    }
-}
-
