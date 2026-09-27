@@ -535,16 +535,8 @@ body {
 strong, b, th { -webkit-text-stroke: 0; }
 a, .hyperlink { color: var(--dlarc-green); }
 a:focus-visible { outline: 3px solid var(--dlarc-gold); outline-offset: 3px; }
-.masthead {
-    background: white;
-    border-top: 6px solid var(--dlarc-green);
-    position: relative;
-}
+.masthead { background: white; border-top: 6px solid var(--dlarc-green); }
 .masthead img { border-radius: 0; }
-.masthead > img {
-    position: relative;
-    z-index: 2;
-}
 .volume-issue {
     box-sizing: border-box;
     margin: 0 auto;
@@ -553,13 +545,8 @@ a:focus-visible { outline: 3px solid var(--dlarc-gold); outline-offset: 3px; }
     letter-spacing: 1px;
     font-size: 13px;
 }
-/* Image of the Month rises beneath the curved masthead, MARC-style. */
-.image-of-the-month {
-    margin: -150px auto 0;
-    padding: 0;
-    position: relative;
-    z-index: 1;
-}
+/* Optional photo sits in normal flow, not hidden behind the masthead. */
+.image-of-the-month { margin: 0 auto; z-index: auto; padding: 0; }
 .header { font-size: 26px; color: var(--dlarc-green); }
 h1, h2 { font-size: 24px; line-height: 1.25; margin-bottom: 12px; }
 h3, h4, h5, h6 { font-size: 19px; line-height: 1.3; margin-bottom: 10px; }
