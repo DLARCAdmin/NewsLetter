@@ -137,6 +137,17 @@
         });
     </script>
 
+    <!-- Edison / Ford / Firestone Feature Article -->
+    <div id="edison-ford-firestone-feature"></div>
+
+    <script>
+    fetch('edison-ford-firestone-ham-radio.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('edison-ford-firestone-feature').innerHTML = data;
+        });
+    </script>
+
     <!-- HamStation HQ -->
     <div id="hamstation-hq"></div>
 
@@ -169,16 +180,6 @@
         });
     </script>
 
-    <!-- Edison / Ford / Firestone Feature Article -->
-    <div id="edison-ford-firestone-feature"></div>
-
-    <script>
-    fetch('edison-ford-firestone-ham-radio.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('edison-ford-firestone-feature').innerHTML = data;
-        });
-    </script>
 
 
  <!-- articles and anouncmmetns above this line -->
