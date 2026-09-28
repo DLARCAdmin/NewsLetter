@@ -191,14 +191,14 @@
         });
     </script>
 
-    <!-- Ham radio humor-->
-    <div id="ham-radio-humor"></div>
+<!-- HamStation HQ -->
+    <div id="hamstation-hq"></div>
 
     <script>
-    fetch('ham-radio-humor.html')
+    fetch('hamstation-hq.html')
         .then(response => response.text())
         .then(data => {
-            document.getElementById('ham-radio-humor').innerHTML = data;
+            document.getElementById('hamstation-hq').innerHTML = data;
         });
     </script>
 
@@ -211,6 +211,20 @@
             document.getElementById('october-recipe').innerHTML = data;
         });
     </script>
+
+
+    <!-- Ham radio humor-->
+    <div id="ham-radio-humor"></div>
+
+    <script>
+    fetch('ham-radio-humor.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('ham-radio-humor').innerHTML = data;
+        });
+    </script>
+
+
 
     <!-- Information Section - Credits and kudos and BOD Meeting Notice-->
     <section class="columns">
