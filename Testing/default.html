@@ -115,6 +115,73 @@
         </article>
     </section>
 
+    <!-- Gloucester County ARC HamFest -->
+    <div id="gloucester-hamfest"></div>
+
+    <script>
+    fetch('gloucester-hamfest-2026.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('gloucester-hamfest').innerHTML = data;
+        });
+    </script>
+
+    <!-- Pennsylvania QSO Party Section -->
+    <div id="pa-qso-party"></div>
+
+    <script>
+    fetch('pa-qso-party.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('pa-qso-party').innerHTML = data;
+        });
+    </script>
+
+    <!-- HamStation HQ -->
+    <div id="hamstation-hq"></div>
+
+    <script>
+    fetch('hamstation-hq.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('hamstation-hq').innerHTML = data;
+        });
+    </script>
+
+   <!-- Recipie of the month-->   
+    <div id="october-recipe"></div>
+    <script>
+    fetch('october-recipe.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('october-recipe').innerHTML = data;
+        });
+    </script>
+
+    <!-- Ham radio humor-->
+    <div id="ham-radio-humor"></div>
+
+    <script>
+    fetch('ham-radio-humor.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('ham-radio-humor').innerHTML = data;
+        });
+    </script>
+
+    <!-- Edison / Ford / Firestone Feature Article -->
+    <div id="edison-ford-firestone-feature"></div>
+
+    <script>
+    fetch('edison-ford-firestone-ham-radio.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('edison-ford-firestone-feature').innerHTML = data;
+        });
+    </script>
+
+ <!-- articles and anouncmmetns above this line -->
+
     <!-- Information Section - Weekly DLARC Dinner -->
     <section class="content-section">
         <h2 class="section-header">🍳 Weekly DLARC Dinner</h2>
@@ -179,52 +246,6 @@
             document.getElementById('bod-meeting-minutes').innerHTML = data;
         });
     </script>
-
-<!-- Gloucester County ARC HamFest -->
-    <div id="gloucester-hamfest"></div>
-
-    <script>
-    fetch('gloucester-hamfest-2026.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('gloucester-hamfest').innerHTML = data;
-        });
-    </script>
-
-<!-- HamStation HQ -->
-    <div id="hamstation-hq"></div>
-
-    <script>
-    fetch('hamstation-hq.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('hamstation-hq').innerHTML = data;
-        });
-    </script>
-
-   <!-- Recipie of the month-->   
-    <div id="october-recipe"></div>
-    <script>
-    fetch('october-recipe.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('october-recipe').innerHTML = data;
-        });
-    </script>
-
-
-    <!-- Ham radio humor-->
-    <div id="ham-radio-humor"></div>
-
-    <script>
-    fetch('ham-radio-humor.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('ham-radio-humor').innerHTML = data;
-        });
-    </script>
-
-
 
     <!-- Information Section - Credits and kudos and BOD Meeting Notice-->
     <section class="columns">
