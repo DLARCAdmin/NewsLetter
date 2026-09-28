@@ -180,6 +180,17 @@
         });
     </script>
 
+<!-- Gloucester County ARC HamFest -->
+    <div id="gloucester-hamfest"></div>
+
+    <script>
+    fetch('gloucester-hamfest-2026.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('gloucester-hamfest').innerHTML = data;
+        });
+    </script>
+
     <!-- Information Section - Credits and kudos and BOD Meeting Notice-->
     <section class="columns">
         <section class="column content-section content-section-blue">
