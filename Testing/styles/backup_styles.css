@@ -819,17 +819,6 @@ h3, h4, h5, h6 { font-size: 19px; line-height: 1.3; margin-bottom: 10px; }
     padding: 24px 32px 28px;
     box-sizing: border-box;
 
-    /* Historical article artwork with a light parchment veil for readability. */
-    background-image:
-        linear-gradient(
-            rgba(255, 252, 244, 0.84),
-            rgba(255, 252, 244, 0.84)
-        ),
-        url("images/edison-article-background.jpg");
-    background-size: 100% auto;
-    background-position: center top;
-    background-repeat: repeat-y;
-
     font-family: Georgia, "Times New Roman", serif;
     font-size: 16px;
     line-height: 1.42;
@@ -1177,7 +1166,6 @@ h3, h4, h5, h6 { font-size: 19px; line-height: 1.3; margin-bottom: 10px; }
         max-width: none;
         padding: 18px 20px;
 
-        background: white;
         color: black;
 
         font-size: 10.5pt;
