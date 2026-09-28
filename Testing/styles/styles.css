@@ -717,12 +717,108 @@ h3, h4, h5, h6 { font-size: 19px; line-height: 1.3; margin-bottom: 10px; }
    DLARC Feature Article
    Edison / Ford / Firestone / Ham Radio
    ================================================================ */
-/* Tighter feature article typography */
+
+
+/* ------------------------------------------------
+   Feature container
+   ------------------------------------------------ */
+
+.feature-article {
+    width: 100%;
+    max-width: 816px;
+    margin: 10px auto;
+    padding: 0;
+    background: #ffffff;
+    color: var(--dlarc-text);
+    border-radius: 4px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+/* ------------------------------------------------
+   Feature header
+   ------------------------------------------------ */
+
+.feature-header {
+    padding: 28px 32px 24px;
+    background: var(--dlarc-green);
+    color: #ffffff;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 5px solid var(--dlarc-gold);
+}
+
+.feature-kicker {
+    margin-bottom: 8px;
+    color: #f2d79b;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.feature-title {
+    max-width: 720px;
+    margin: 0 auto 10px;
+    padding: 0;
+    color: #ffffff;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 34px;
+    line-height: 1.12;
+    font-weight: 700;
+}
+
+.feature-deck {
+    max-width: 670px;
+    margin: 0 auto 14px;
+    color: #e8eee9;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center !important;
+}
+
+.feature-byline {
+    color: #f2d79b;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+.feature-byline span {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+/* ------------------------------------------------
+   Feature hero image
+   ------------------------------------------------ */
+
+.feature-hero {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+
+/* ------------------------------------------------
+   Main article body
+   ------------------------------------------------ */
 
 .feature-body {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 24px 34px 28px;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 24px 32px 28px;
+    box-sizing: border-box;
+
     font-family: Georgia, "Times New Roman", serif;
     font-size: 16px;
     line-height: 1.42;
@@ -734,8 +830,14 @@ h3, h4, h5, h6 { font-size: 19px; line-height: 1.3; margin-bottom: 10px; }
     text-align: left;
 }
 
+
+/* ------------------------------------------------
+   Opening
+   ------------------------------------------------ */
+
 .feature-opening {
-    margin-bottom: 20px;
+    max-width: 720px;
+    margin: 0 auto 22px;
     font-size: 17px;
     line-height: 1.45;
 }
@@ -747,41 +849,91 @@ h3, h4, h5, h6 { font-size: 19px; line-height: 1.3; margin-bottom: 10px; }
     font-size: 19px;
 }
 
+
+/* ------------------------------------------------
+   Section headings
+   ------------------------------------------------ */
+
 .feature-body h3 {
-    margin: 27px 0 10px;
+    clear: both;
+    margin: 27px 0 11px;
     padding-bottom: 5px;
+
     color: var(--dlarc-green);
     font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
     font-size: 23px;
     line-height: 1.2;
+
     border-bottom: 2px solid var(--dlarc-gold);
     break-after: avoid;
 }
 
-.feature-body blockquote {
-    margin: 16px 0;
-    padding: 10px 18px;
-    background: #f8f5ec;
-    border-left: 5px solid var(--dlarc-gold);
-    border-radius: 0 4px 4px 0;
-    color: var(--dlarc-text);
-    font-size: 17px;
-    line-height: 1.4;
-    font-style: italic;
+
+/* ------------------------------------------------
+   Two-column feature sections
+
+   Each article section is wrapped in:
+   <div class="feature-story-section">
+   ------------------------------------------------ */
+
+.feature-story-section {
+    column-count: 2;
+    column-gap: 30px;
+    column-rule: 1px solid var(--dlarc-border);
+    margin: 0 0 18px;
 }
 
+.feature-story-section p:first-child {
+    margin-top: 0;
+}
+
+.feature-story-section p {
+    break-inside: avoid;
+}
+
+
+/* ------------------------------------------------
+   Standard quotations
+   ------------------------------------------------ */
+
+.feature-body blockquote {
+    margin: 14px 0;
+    padding: 10px 16px;
+
+    background: #f8f5ec;
+    color: var(--dlarc-text);
+
+    border-left: 5px solid var(--dlarc-gold);
+    border-radius: 0 4px 4px 0;
+
+    font-size: 16px;
+    line-height: 1.35;
+    font-style: italic;
+
+    break-inside: avoid;
+}
+
+
+/* ------------------------------------------------
+   Pull quotes
+   ------------------------------------------------ */
+
 .feature-pullquote {
-    margin: 20px 0;
-    padding: 13px 20px;
+    margin: 17px 0;
+    padding: 12px 18px;
+
     background: var(--dlarc-green);
-    border-left: 6px solid var(--dlarc-gold);
     color: #ffffff;
+
+    border-left: 6px solid var(--dlarc-gold);
+    border-radius: 4px;
+
     font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
-    font-size: 21px;
+    font-size: 20px;
     line-height: 1.25;
     font-weight: 700;
     text-align: center;
-    border-radius: 4px;
+
     break-inside: avoid;
 }
 
@@ -789,46 +941,85 @@ h3, h4, h5, h6 { font-size: 19px; line-height: 1.3; margin-bottom: 10px; }
     font-size: 28px;
 }
 
+
+/* ------------------------------------------------
+   Short rhythmic lists
+   ------------------------------------------------ */
+
 .feature-beat {
-    margin: 12px 0 15px 18px;
-    padding-left: 14px;
+    margin: 10px 0 13px 14px;
+    padding-left: 12px;
     border-left: 3px solid var(--dlarc-gold);
+    break-inside: avoid;
 }
 
 .feature-beat p {
     margin: 1px 0;
 }
 
+
+/* ------------------------------------------------
+   Edison-to-radio technology path
+   ------------------------------------------------ */
+
 .feature-path {
-    margin: 18px 0;
-    padding: 14px 18px;
+    margin: 16px 0;
+    padding: 13px 16px;
+
     background: #f4f6f1;
     border: 1px solid var(--dlarc-border);
     border-radius: 4px;
+
     text-align: center;
     break-inside: avoid;
 }
 
 .feature-path span {
     display: block;
+
     font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
     font-weight: 700;
-    line-height: 1.25;
+    line-height: 1.2;
 }
 
 .feature-path span:not(:last-child)::after {
     content: "↓";
     display: block;
+
     margin: 1px 0;
     color: var(--dlarc-gold);
     font-size: 16px;
 }
 
+
+/* ------------------------------------------------
+   Feature footer
+   ------------------------------------------------ */
+
+.feature-footer {
+    padding: 16px 28px;
+
+    background: #f4f6f1;
+    color: var(--dlarc-text);
+
+    border-top: 1px solid var(--dlarc-border);
+
+    text-align: right;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+
 /* ================================================================
-   Feature Article - Mobile Layout
+   Feature Article - Mobile
    ================================================================ */
 
 @media (max-width: 768px) {
+
+    .feature-article {
+        width: 100%;
+        max-width: 100%;
+    }
 
     .feature-header {
         padding: 22px 18px 18px;
@@ -854,6 +1045,12 @@ h3, h4, h5, h6 { font-size: 19px; line-height: 1.3; margin-bottom: 10px; }
 
     .feature-byline {
         font-size: 13px;
+    }
+
+    .feature-hero {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
     }
 
     .feature-body {
@@ -882,21 +1079,26 @@ h3, h4, h5, h6 { font-size: 19px; line-height: 1.3; margin-bottom: 10px; }
         margin-top: 25px;
         margin-bottom: 9px;
         font-size: 21px;
-        line-height: 1.2;
+    }
+
+    /* Collapse feature article to one column on phones */
+    .feature-story-section {
+        column-count: 1;
+        column-gap: 0;
+        column-rule: none;
+        margin-bottom: 16px;
     }
 
     .feature-body blockquote {
         margin: 14px 0;
         padding: 10px 14px;
         font-size: 16px;
-        line-height: 1.4;
     }
 
     .feature-pullquote {
         margin: 17px 0;
         padding: 12px 15px;
         font-size: 19px;
-        line-height: 1.25;
     }
 
     .feature-punchline {
@@ -908,17 +1110,9 @@ h3, h4, h5, h6 { font-size: 19px; line-height: 1.3; margin-bottom: 10px; }
         padding-left: 12px;
     }
 
-    .feature-beat p {
-        margin-bottom: 1px;
-    }
-
     .feature-path {
         margin: 15px 0;
         padding: 12px 14px;
-    }
-
-    .feature-path span {
-        line-height: 1.2;
     }
 
     .feature-footer {
@@ -929,20 +1123,25 @@ h3, h4, h5, h6 { font-size: 19px; line-height: 1.3; margin-bottom: 10px; }
 
 
 /* ================================================================
-   Feature Article - Print Handling
+   Feature Article - Print
    ================================================================ */
 
 @media print {
 
     .feature-article {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 0;
+
         background: white;
         color: black;
-        padding: 0;
     }
 
     .feature-header {
         background: white;
         color: black;
+
         padding: 18px 20px;
         border-bottom: 3px solid black;
     }
@@ -954,48 +1153,66 @@ h3, h4, h5, h6 { font-size: 19px; line-height: 1.3; margin-bottom: 10px; }
         color: black;
     }
 
+    .feature-hero {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+
+        break-inside: avoid;
+    }
+
     .feature-body {
         max-width: none;
         padding: 18px 20px;
+
         color: black;
+
         font-size: 10.5pt;
         line-height: 1.3;
     }
 
     .feature-body p {
-        margin-bottom: 6pt;
+        margin-bottom: 5pt;
     }
 
     .feature-body h3 {
         color: black;
-        margin-top: 16pt;
+
+        margin-top: 14pt;
         margin-bottom: 6pt;
+
         border-bottom: 1px solid black;
+
         break-after: avoid;
+    }
+
+    .feature-story-section {
+        column-count: 2;
+        column-gap: 20pt;
+        column-rule: 0.5pt solid #aaa;
+        margin-bottom: 12pt;
+    }
+
+    .feature-body blockquote,
+    .feature-pullquote,
+    .feature-beat,
+    .feature-path {
+        break-inside: avoid;
     }
 
     .feature-body blockquote {
         background: white;
         color: black;
-        margin: 10pt 0;
-        padding: 7pt 10pt;
+
         border-left: 3px solid black;
-        break-inside: avoid;
     }
 
     .feature-pullquote {
         background: white;
         color: black;
-        margin: 12pt 0;
-        padding: 8pt 10pt;
-        border: 1px solid black;
-        font-size: 13pt;
-        break-inside: avoid;
-    }
 
-    .feature-beat,
-    .feature-path {
-        break-inside: avoid;
+        border: 1px solid black;
     }
 
     .feature-path {
@@ -1007,15 +1224,10 @@ h3, h4, h5, h6 { font-size: 19px; line-height: 1.3; margin-bottom: 10px; }
         color: black;
     }
 
-    .feature-hero {
-        max-width: 100%;
-        break-inside: avoid;
-    }
-
     .feature-footer {
         background: white;
         color: black;
+
         border-top: 1px solid black;
-        padding: 10pt 20pt;
     }
 }
