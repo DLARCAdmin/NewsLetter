@@ -202,6 +202,16 @@
         });
     </script>
 
+   <!-- Recipie of the month-->   
+    <div id="october-recipe"></div>
+    <script>
+    fetch('october-recipe.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('october-recipe').innerHTML = data;
+        });
+    </script>
+
     <!-- Information Section - Credits and kudos and BOD Meeting Notice-->
     <section class="columns">
         <section class="column content-section content-section-blue">
